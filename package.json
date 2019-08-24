@@ -1,0 +1,35 @@
+{
+  "name": "eventive",
+  "version": "1.0.0",
+  "description": "its a event management software named eventia, ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishankunal/Eventive.git"
+  },
+  "author": "kishan kunal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kishankunal/Eventive/issues"
+  },
+  "homepage": "https://github.com/kishankunal/Eventive#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.0.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "font-awesome": "^4.7.0",
+    "helmet": "^3.20.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.6.10",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "popper.js": "^1.12.9",
+    "save": "^2.4.0"
+  }
+}
