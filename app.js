@@ -41,6 +41,9 @@ app.get('/', (req, res) => res.render('landing'));
 
 app.get('/home', (req, res) => res.render('home',{page:"home" }));
 
+//admin portal
+app.get('/admin/portal/adminportal/async/admin',(req,res) => res.render('admin',{page:"admin"}));
+
 //===================================
 //assigning port to server
 //===================================

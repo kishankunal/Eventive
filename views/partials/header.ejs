@@ -27,8 +27,11 @@
         <ul class="nav navbar-nav">
           <!--remove active so that it works correctly dynamically-->
           <li class="<%= typeof page !== 'undefined' && page === 'home' ? 'active' : '' %>"><a class="navbar-link" href="/home">Home</a></li>
-          <li class="<%= typeof page !== 'undefined' && page === '' ? 'active' : '' %>"><a class="navbar-link" href="#">About Us</a></li>
+          <li class="<%= typeof page !== 'undefined' && page === '' ? 'active' : '' %>"><a class="navbar-link" href="#">Events</a></li>
+          <li class="<%= typeof page !== 'undefined' && page === '' ? 'active' : '' %>"><a class="navbar-link" href="#">Calander</a></li>
+          <li class="<%= typeof page !== 'undefined' && page === '' ? 'active' : '' %>"><a class="navbar-link" href="#">Clubs</a></li>
           <li class="<%= typeof page !== 'undefined' && page === '' ? 'active' : '' %>"><a class="navbar-link" href="#">Contact Us</a></li>
+          <li class="<%= typeof page !== 'undefined' && page === '' ? 'active' : '' %>"><a class="navbar-link" href="#">About Us</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a class="navbar-link"  href="/login">Login</a></li>
