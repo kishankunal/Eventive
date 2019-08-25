@@ -13,7 +13,7 @@ var   express        = require("express"),
 //======================
 //   Database
 //======================
-mongoose.connect("mongodb://localhost/code_war", { useNewUrlParser: true }, function(err,res){
+mongoose.connect("mongodb://localhost/eventive", { useNewUrlParser: true }, function(err,res){
     if(err){
         console.log("Database Connection Failed");
     }
