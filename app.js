@@ -37,9 +37,9 @@ app.use(express.static(__dirname+"/public"));
 //    ROUTES
 //==================
 
-app.get('/', (req, res) => res.render('landing',{page:"home" }));
+app.get('/', (req, res) => res.render('landing'));
 
-
+app.get('/home', (req, res) => res.render('home',{page:"home" }));
 
 //===================================
 //assigning port to server
