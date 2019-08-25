@@ -41,8 +41,22 @@ app.get('/', (req, res) => res.render('landing'));
 
 app.get('/home', (req, res) => res.render('home',{page:"home" }));
 
-//admin portal
-app.get('/admin/portal/adminportal/async/admin',(req,res) => res.render('admin',{page:"admin"}));
+//=========admin portal================
+app.get('/admin/portal/adminportal/async/admin',(req,res) => res.render('admin',{page:"adminlog"}));
+//====================================
+
+//=========contact page port===========
+app.get('/contactUs', (req,res) => res.render('contact',{page:"contact"}));
+//====================================
+
+
+
+
+
+
+
+
+
 
 //===================================
 //assigning port to server

@@ -1,1 +1,93 @@
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita voluptatum amet officiis quis obcaecati! Saepe quod beatae porro inventore doloremque optio, distinctio delectus tempore sequi molestiae! Unde possimus ea omnis.</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Eventica</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="icon" href="/pic/favico.ico" />
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <nav class="navbar  navbar-inverse navbar-fixed-top" >
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand mr-auto" href="/admin/portal/adminportal/async/admin">Eventive</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <!--remove active so that it works correctly dynamically-->
+          <!--for this page must check wether current user is admin or not-->
+          <li class="<%= typeof page !== 'undefined' && page === '' ? 'active' : '' %>"><a class="navbar-link" href="/#">Admin Dashboard</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+                <li class="<%= typeof page !== 'undefined' && page === 'adminlog' ? 'active' : '' %>"><a class="navbar-link" href="/admin/portal/adminportal/async/admin">Welcome Admin</a></li>
+               <!--logout option need not be be flashed at -->
+                <li class="<%= typeof page !== 'undefined' && page === 'login' ? 'active' : '' %>"><a class="navbar-link"  href="/login">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container" style="margin-top: 65px">
+        <div class="row">
+            <h1 style="text-align: center">Admin Login</h1>
+            <div class="rwd-form">
+                <form action="/login" method="post">
+                    <div class="form-group">
+                        <label for="username">User Name</label>
+                        <input class="form-control" type="text" name="username" autocomplete="off" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="password" name="password" autocomplete="off" required />
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-md btn-primary btn-block">Login</button>
+                    </div>
+                    <span>Forgot your password? <a href="#">Reset password</a></span>
+                <!--<span>Forgot your password? <a href="/password_reset">Reset password</a></span>-->
+                    <hr>
+                </form>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <hr>
+  <div class="container">
+    
+    <footer class="footer">
+        
+        <div class="container ">
+            <p class="text-muted">&copy; Eventica 2018-2019 | <a href="/home">Home</a> | <a href="#">Options</a></p>
+        </div>
+    </footer>
+  </div><!-- /.container -->
+        <!-- jQuery CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap JS CDN -->
+    <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+        
+        <!--Here we have to add javascript code source-->
+        <!--<script src="/js/script.js"></script>-->
+  </body>
+</html>
+  
