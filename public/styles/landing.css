@@ -18,7 +18,10 @@ body {
     color: #fff;
     opacity: 1;
   }
-  
+  .entrydesc{
+      color:#fff;
+      opacity:1;
+  }
   .entryLink:hover {
     color: #fff;
     opacity: 0.8;
@@ -67,22 +70,22 @@ body {
   }
   
   .slideshow li:nth-child(1) { 
-    background-image: url(/images/img1.jpg) 
+    background-image: url(https://cimg.visitscotland.com/cms-images/tours/520045/glenfinnan-loch-shiel) 
   }
   .slideshow li:nth-child(2) { 
-    background-image: url(/images/img4.jpg;);
+    background-image: url(http://clickwallpapers.com/1080p/nice-nature-wallpaper-desktop-On-Wallpaper-1080p-HD.jpg);
     animation-delay: 10s; 
   }
   .slideshow li:nth-child(3) { 
-    background-image: url(/images/img4.jpg);
+    background-image: url(http://getwallpapers.com/wallpaper/full/5/c/0/1177041-landscape-wallpaper-1080p-3840x2160-for-htc.jpg);
     animation-delay: 20s; 
   }
   .slideshow li:nth-child(4) { 
-    background-image: url(/images/img5.jpg);
+    background-image: url(https://www.hdwallpapers.in/download/dusk_mountains-2560x1600.jpg);
     animation-delay: 30s; 
   }
   .slideshow li:nth-child(5) { 
-    background-image: url(/images/img6.jpg);
+    background-image: url(https://rail.cc/wp-content/uploads/sites/2/2018/08/schottland-huette-zug.jpg);
     animation-delay: 40s; 
   }
   
