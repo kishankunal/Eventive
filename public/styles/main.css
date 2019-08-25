@@ -15,9 +15,6 @@ body {
   a:visited {
     text-decoration: none;
   }
-  .xyz img {
-    height:30em;
-  }
   /* campground cards */
   .card {
     border: none;
@@ -97,6 +94,17 @@ body {
   }
   .abc{
     background: #eee;
+  }
+  .go-back{
+      color: #fff;
+  }
+  .go-back:hover{
+    outline: none;
+    text-decoration: none;
+}
+  .go-back:focus{
+      outline: none;
+      text-decoration: none;
   }
 
   
