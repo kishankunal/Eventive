@@ -102,9 +102,10 @@ body {
     outline: none;
     text-decoration: none;
 }
-  .go-back:focus{
-      outline: none;
-      text-decoration: none;
-  }
+.go-back:focus{
+  outline: none;
+  text-decoration: none;
+}
+
 
   
