@@ -49,7 +49,8 @@ app.get('/admin/portal/adminportal/async/admin',(req,res) => res.render('admin',
 app.get('/contactUs', (req,res) => res.render('contact',{page:"contact"}));
 //====================================
 
-
+//=================calender page route=========
+app.get('/calender', (req,res) => res.render('calander',{page:"calender"}))
 
 
 
